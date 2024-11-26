@@ -1,6 +1,5 @@
 locals {
   dum0_network = "10.240.255.${var.host_node.id}/32"
-  bgp_system_as = 700 + var.host_node.id
 }
 resource "vyos_system" "host_parameters" {
   domain_name = "lylat.space"
